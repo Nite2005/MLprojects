@@ -12,6 +12,7 @@ list_of_file=[
     ".github/workflows/.gitkeep",
     f"src/{project_name}/__init__.py",
     f"src/{project_name}/components/__init__.py",
+    f"src/{project_name}/components/data_ingestion.py",
     f"src/{project_name}/components/data_transformation.py",
     f"src/{project_name}/components/model_trainer.py",
     f"src/{project_name}/components/model_monitoring.py",
@@ -20,7 +21,7 @@ list_of_file=[
     f"src/{project_name}/pipelines/prediction_pipelines.py",
     f"src/{project_name}/exception.py",
     f"src/{project_name}/logger.py",
-    f"src/{project_name}/utils.py"
+    f"src/{project_name}/utils.py",
     "app.py",
     "Dockerfile",
     "requirements.txt",
