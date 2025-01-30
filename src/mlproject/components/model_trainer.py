@@ -108,13 +108,13 @@ class ModelTrainer:
             print("this is the best model : ")
             print(best_model_name)
 
-            model_name = list(params.keys())
+            model_names = list(params.keys())
 
-            actual_model = " "
+            actual_model = ""
 
-            for model in model_name :
+            for model in model_names :
                 if best_model_name == model:
-                    actual_model = actual_model + model
+                    actual_model = model
 
             best_params = params[actual_model]
 
@@ -124,10 +124,6 @@ class ModelTrainer:
             tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
             #mlflow
-            import dagshub
-            dagshub.init(repo_owner='nite2005',
-            repo_name='MLprojects',
-            mlflow=True)
 
             with mlflow.start_run():
 

@@ -1,1 +1,5 @@
 ## END TO END DATA SCIENCE PROJECT
+MLFLOW_TRACKING_URI= https://dagshub.com/Nite2005/MLprojects.mlflow \
+MLFLOW_TRACKING_USERNAME= Nite2005 \
+MLFLOW_TRACKING_PASSWORD= Nitesh@2005 \
+python script.py
